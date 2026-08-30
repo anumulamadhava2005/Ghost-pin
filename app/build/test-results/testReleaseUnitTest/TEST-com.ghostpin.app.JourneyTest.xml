@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.ghostpin.app.JourneyTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-08-30T11:11:30" hostname="madhava" time="0.031">
+  <properties/>
+  <testcase name="testCustomTravelTimeOverride" classname="com.ghostpin.app.JourneyTest" time="0.019"/>
+  <testcase name="testJourneyRunStateTransitions" classname="com.ghostpin.app.JourneyTest" time="0.001"/>
+  <testcase name="testJourneyDistanceCalculation" classname="com.ghostpin.app.JourneyTest" time="0.009"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

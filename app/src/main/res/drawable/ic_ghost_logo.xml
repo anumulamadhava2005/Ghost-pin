@@ -1,0 +1,30 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <!-- Ghost Body -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M24,4 C14.06,4 6,12.06 6,22 L6,41 C6,42.66 7.34,44 9,44 C10.1,44 11.08,43.4 11.6,42.48 L14.5,37.36 L17.4,42.48 C18.15,43.8 19.85,44.25 21.17,43.5 C21.49,43.32 21.77,43.06 21.97,42.74 L24,39.17 L26.03,42.74 C26.78,44.06 28.48,44.51 29.8,43.76 C30.15,43.56 30.44,43.27 30.64,42.92 L33.5,37.36 L36.4,42.48 C36.92,43.4 37.9,44 39,44 C40.66,44 42,42.66 42,41 L42,22 C42,12.06 33.94,4 24,4 Z" />
+
+    <!-- Left Eye -->
+    <path
+        android:fillColor="#09090B"
+        android:pathData="M18,20 C19.66,20 21,18.66 21,17 C21,15.34 19.66,14 18,14 C16.34,14 15,15.34 15,17 C15,18.66 16.34,20 18,20 Z" />
+
+    <!-- Right Eye -->
+    <path
+        android:fillColor="#09090B"
+        android:pathData="M30,20 C31.66,20 33,18.66 33,17 C33,15.34 31.66,14 30,14 C28.34,14 27,15.34 27,17 C27,18.66 28.34,20 30,20 Z" />
+
+    <!-- Ghost Eye Highlights (Glow) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M19,16 C19.55,16 20,15.55 20,15 C20,14.45 19.55,14 19,14 C18.45,14 18,14.45 18,15 C18,15.55 18.45,16 19,16 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M31,16 C31.55,16 32,15.55 32,15 C32,14.45 31.55,14 31,14 C30.45,14 30,14.45 30,15 C30,15.55 30.45,16 31,16 Z" />
+
+</vector>

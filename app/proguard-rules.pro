@@ -1,0 +1,1 @@
+# GhostPin Proguard Rules

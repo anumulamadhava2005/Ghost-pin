@@ -1,0 +1,233 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.ghostpin.app"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="35" />
+10
+11    <!-- Network Permissions for Map Tiles & Geocoding -->
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/home/resetadmin/projects/horsini/app/src/main/AndroidManifest.xml:6:5-67
+12-->/home/resetadmin/projects/horsini/app/src/main/AndroidManifest.xml:6:22-64
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->/home/resetadmin/projects/horsini/app/src/main/AndroidManifest.xml:7:5-79
+13-->/home/resetadmin/projects/horsini/app/src/main/AndroidManifest.xml:7:22-76
+14
+15    <!-- Location Permissions -->
+16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+16-->/home/resetadmin/projects/horsini/app/src/main/AndroidManifest.xml:10:5-79
+16-->/home/resetadmin/projects/horsini/app/src/main/AndroidManifest.xml:10:22-76
+17    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+17-->/home/resetadmin/projects/horsini/app/src/main/AndroidManifest.xml:11:5-81
+17-->/home/resetadmin/projects/horsini/app/src/main/AndroidManifest.xml:11:22-78
+18    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+18-->/home/resetadmin/projects/horsini/app/src/main/AndroidManifest.xml:12:5-14:39
+18-->/home/resetadmin/projects/horsini/app/src/main/AndroidManifest.xml:13:9-63
+19
+20    <!-- Foreground Service Permissions -->
+21    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+21-->/home/resetadmin/projects/horsini/app/src/main/AndroidManifest.xml:17:5-77
+21-->/home/resetadmin/projects/horsini/app/src/main/AndroidManifest.xml:17:22-74
+22    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION" />
+22-->/home/resetadmin/projects/horsini/app/src/main/AndroidManifest.xml:18:5-86
+22-->/home/resetadmin/projects/horsini/app/src/main/AndroidManifest.xml:18:22-83
+23    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+23-->/home/resetadmin/projects/horsini/app/src/main/AndroidManifest.xml:19:5-77
+23-->/home/resetadmin/projects/horsini/app/src/main/AndroidManifest.xml:19:22-74
+24    <uses-permission android:name="android.permission.WAKE_LOCK" />
+24-->/home/resetadmin/projects/horsini/app/src/main/AndroidManifest.xml:20:5-68
+24-->/home/resetadmin/projects/horsini/app/src/main/AndroidManifest.xml:20:22-65
+25
+26    <permission
+26-->[androidx.core:core:1.15.0] /home/resetadmin/.gradle/caches/8.10.2/transforms/db68e9028cb3953c5a409f0ef1270fa5/transformed/core-1.15.0/AndroidManifest.xml:22:5-24:47
+27        android:name="com.ghostpin.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+27-->[androidx.core:core:1.15.0] /home/resetadmin/.gradle/caches/8.10.2/transforms/db68e9028cb3953c5a409f0ef1270fa5/transformed/core-1.15.0/AndroidManifest.xml:23:9-81
+28        android:protectionLevel="signature" />
+28-->[androidx.core:core:1.15.0] /home/resetadmin/.gradle/caches/8.10.2/transforms/db68e9028cb3953c5a409f0ef1270fa5/transformed/core-1.15.0/AndroidManifest.xml:24:9-44
+29
+30    <uses-permission android:name="com.ghostpin.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+30-->[androidx.core:core:1.15.0] /home/resetadmin/.gradle/caches/8.10.2/transforms/db68e9028cb3953c5a409f0ef1270fa5/transformed/core-1.15.0/AndroidManifest.xml:26:5-97
+30-->[androidx.core:core:1.15.0] /home/resetadmin/.gradle/caches/8.10.2/transforms/db68e9028cb3953c5a409f0ef1270fa5/transformed/core-1.15.0/AndroidManifest.xml:26:22-94
+31
+32    <supports-screens
+32-->[org.osmdroid:osmdroid-android:6.1.20] /home/resetadmin/.gradle/caches/8.10.2/transforms/5d0a07511ff3ba8f77d34d089a102d5e/transformed/osmdroid-android-6.1.20/AndroidManifest.xml:9:5-12:40
+33        android:anyDensity="true"
+33-->[org.osmdroid:osmdroid-android:6.1.20] /home/resetadmin/.gradle/caches/8.10.2/transforms/5d0a07511ff3ba8f77d34d089a102d5e/transformed/osmdroid-android-6.1.20/AndroidManifest.xml:10:9-34
+34        android:largeScreens="true"
+34-->[org.osmdroid:osmdroid-android:6.1.20] /home/resetadmin/.gradle/caches/8.10.2/transforms/5d0a07511ff3ba8f77d34d089a102d5e/transformed/osmdroid-android-6.1.20/AndroidManifest.xml:11:9-36
+35        android:normalScreens="true" />
+35-->[org.osmdroid:osmdroid-android:6.1.20] /home/resetadmin/.gradle/caches/8.10.2/transforms/5d0a07511ff3ba8f77d34d089a102d5e/transformed/osmdroid-android-6.1.20/AndroidManifest.xml:12:9-37
+36
+37    <uses-feature
+37-->[org.osmdroid:osmdroid-android:6.1.20] /home/resetadmin/.gradle/caches/8.10.2/transforms/5d0a07511ff3ba8f77d34d089a102d5e/transformed/osmdroid-android-6.1.20/AndroidManifest.xml:14:5-16:36
+38        android:name="android.hardware.location.network"
+38-->[org.osmdroid:osmdroid-android:6.1.20] /home/resetadmin/.gradle/caches/8.10.2/transforms/5d0a07511ff3ba8f77d34d089a102d5e/transformed/osmdroid-android-6.1.20/AndroidManifest.xml:15:9-57
+39        android:required="false" />
+39-->[org.osmdroid:osmdroid-android:6.1.20] /home/resetadmin/.gradle/caches/8.10.2/transforms/5d0a07511ff3ba8f77d34d089a102d5e/transformed/osmdroid-android-6.1.20/AndroidManifest.xml:16:9-33
+40    <uses-feature
+40-->[org.osmdroid:osmdroid-android:6.1.20] /home/resetadmin/.gradle/caches/8.10.2/transforms/5d0a07511ff3ba8f77d34d089a102d5e/transformed/osmdroid-android-6.1.20/AndroidManifest.xml:17:5-19:36
+41        android:name="android.hardware.location.gps"
+41-->[org.osmdroid:osmdroid-android:6.1.20] /home/resetadmin/.gradle/caches/8.10.2/transforms/5d0a07511ff3ba8f77d34d089a102d5e/transformed/osmdroid-android-6.1.20/AndroidManifest.xml:18:9-53
+42        android:required="false" />
+42-->[org.osmdroid:osmdroid-android:6.1.20] /home/resetadmin/.gradle/caches/8.10.2/transforms/5d0a07511ff3ba8f77d34d089a102d5e/transformed/osmdroid-android-6.1.20/AndroidManifest.xml:19:9-33
+43    <uses-feature
+43-->[org.osmdroid:osmdroid-android:6.1.20] /home/resetadmin/.gradle/caches/8.10.2/transforms/5d0a07511ff3ba8f77d34d089a102d5e/transformed/osmdroid-android-6.1.20/AndroidManifest.xml:20:5-22:36
+44        android:name="android.hardware.telephony"
+44-->[org.osmdroid:osmdroid-android:6.1.20] /home/resetadmin/.gradle/caches/8.10.2/transforms/5d0a07511ff3ba8f77d34d089a102d5e/transformed/osmdroid-android-6.1.20/AndroidManifest.xml:21:9-50
+45        android:required="false" />
+45-->[org.osmdroid:osmdroid-android:6.1.20] /home/resetadmin/.gradle/caches/8.10.2/transforms/5d0a07511ff3ba8f77d34d089a102d5e/transformed/osmdroid-android-6.1.20/AndroidManifest.xml:22:9-33
+46    <uses-feature
+46-->[org.osmdroid:osmdroid-android:6.1.20] /home/resetadmin/.gradle/caches/8.10.2/transforms/5d0a07511ff3ba8f77d34d089a102d5e/transformed/osmdroid-android-6.1.20/AndroidManifest.xml:23:5-25:36
+47        android:name="android.hardware.wifi"
+47-->[org.osmdroid:osmdroid-android:6.1.20] /home/resetadmin/.gradle/caches/8.10.2/transforms/5d0a07511ff3ba8f77d34d089a102d5e/transformed/osmdroid-android-6.1.20/AndroidManifest.xml:24:9-45
+48        android:required="false" />
+48-->[org.osmdroid:osmdroid-android:6.1.20] /home/resetadmin/.gradle/caches/8.10.2/transforms/5d0a07511ff3ba8f77d34d089a102d5e/transformed/osmdroid-android-6.1.20/AndroidManifest.xml:25:9-33
+49
+50    <application
+50-->/home/resetadmin/projects/horsini/app/src/main/AndroidManifest.xml:22:5-49:19
+51        android:name="com.ghostpin.app.GhostPinApplication"
+51-->/home/resetadmin/projects/horsini/app/src/main/AndroidManifest.xml:23:9-44
+52        android:allowBackup="true"
+52-->/home/resetadmin/projects/horsini/app/src/main/AndroidManifest.xml:24:9-35
+53        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+53-->[androidx.core:core:1.15.0] /home/resetadmin/.gradle/caches/8.10.2/transforms/db68e9028cb3953c5a409f0ef1270fa5/transformed/core-1.15.0/AndroidManifest.xml:28:18-86
+54        android:debuggable="true"
+55        android:extractNativeLibs="false"
+56        android:icon="@mipmap/ic_launcher"
+56-->/home/resetadmin/projects/horsini/app/src/main/AndroidManifest.xml:25:9-43
+57        android:label="@string/app_name"
+57-->/home/resetadmin/projects/horsini/app/src/main/AndroidManifest.xml:26:9-41
+58        android:roundIcon="@mipmap/ic_launcher_round"
+58-->/home/resetadmin/projects/horsini/app/src/main/AndroidManifest.xml:27:9-54
+59        android:supportsRtl="true"
+59-->/home/resetadmin/projects/horsini/app/src/main/AndroidManifest.xml:28:9-35
+60        android:theme="@android:style/Theme.Material.NoActionBar"
+60-->/home/resetadmin/projects/horsini/app/src/main/AndroidManifest.xml:30:9-66
+61        android:usesCleartextTraffic="true" >
+61-->/home/resetadmin/projects/horsini/app/src/main/AndroidManifest.xml:29:9-44
+62        <activity
+62-->/home/resetadmin/projects/horsini/app/src/main/AndroidManifest.xml:32:9-41:20
+63            android:name="com.ghostpin.app.MainActivity"
+63-->/home/resetadmin/projects/horsini/app/src/main/AndroidManifest.xml:33:13-41
+64            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+64-->/home/resetadmin/projects/horsini/app/src/main/AndroidManifest.xml:35:13-87
+65            android:exported="true"
+65-->/home/resetadmin/projects/horsini/app/src/main/AndroidManifest.xml:34:13-36
+66            android:theme="@android:style/Theme.Material.NoActionBar" >
+66-->/home/resetadmin/projects/horsini/app/src/main/AndroidManifest.xml:36:13-70
+67            <intent-filter>
+67-->/home/resetadmin/projects/horsini/app/src/main/AndroidManifest.xml:37:13-40:29
+68                <action android:name="android.intent.action.MAIN" />
+68-->/home/resetadmin/projects/horsini/app/src/main/AndroidManifest.xml:38:17-69
+68-->/home/resetadmin/projects/horsini/app/src/main/AndroidManifest.xml:38:25-66
+69
+70                <category android:name="android.intent.category.LAUNCHER" />
+70-->/home/resetadmin/projects/horsini/app/src/main/AndroidManifest.xml:39:17-77
+70-->/home/resetadmin/projects/horsini/app/src/main/AndroidManifest.xml:39:27-74
+71            </intent-filter>
+72        </activity>
+73
+74        <service
+74-->/home/resetadmin/projects/horsini/app/src/main/AndroidManifest.xml:43:9-47:56
+75            android:name="com.ghostpin.app.engine.MockLocationService"
+75-->/home/resetadmin/projects/horsini/app/src/main/AndroidManifest.xml:44:13-55
+76            android:enabled="true"
+76-->/home/resetadmin/projects/horsini/app/src/main/AndroidManifest.xml:45:13-35
+77            android:exported="false"
+77-->/home/resetadmin/projects/horsini/app/src/main/AndroidManifest.xml:46:13-37
+78            android:foregroundServiceType="location" />
+78-->/home/resetadmin/projects/horsini/app/src/main/AndroidManifest.xml:47:13-53
+79
+80        <provider
+80-->[androidx.emoji2:emoji2:1.3.0] /home/resetadmin/.gradle/caches/8.10.2/transforms/629acfccb9ed0adcf106407890391283/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+81            android:name="androidx.startup.InitializationProvider"
+81-->[androidx.emoji2:emoji2:1.3.0] /home/resetadmin/.gradle/caches/8.10.2/transforms/629acfccb9ed0adcf106407890391283/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+82            android:authorities="com.ghostpin.app.androidx-startup"
+82-->[androidx.emoji2:emoji2:1.3.0] /home/resetadmin/.gradle/caches/8.10.2/transforms/629acfccb9ed0adcf106407890391283/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+83            android:exported="false" >
+83-->[androidx.emoji2:emoji2:1.3.0] /home/resetadmin/.gradle/caches/8.10.2/transforms/629acfccb9ed0adcf106407890391283/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+84            <meta-data
+84-->[androidx.emoji2:emoji2:1.3.0] /home/resetadmin/.gradle/caches/8.10.2/transforms/629acfccb9ed0adcf106407890391283/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+85                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+85-->[androidx.emoji2:emoji2:1.3.0] /home/resetadmin/.gradle/caches/8.10.2/transforms/629acfccb9ed0adcf106407890391283/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+86                android:value="androidx.startup" />
+86-->[androidx.emoji2:emoji2:1.3.0] /home/resetadmin/.gradle/caches/8.10.2/transforms/629acfccb9ed0adcf106407890391283/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+87            <meta-data
+87-->[androidx.lifecycle:lifecycle-process:2.8.7] /home/resetadmin/.gradle/caches/8.10.2/transforms/4763ec80fee7f9aa0b02bc184f774de8/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:29:13-31:52
+88                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+88-->[androidx.lifecycle:lifecycle-process:2.8.7] /home/resetadmin/.gradle/caches/8.10.2/transforms/4763ec80fee7f9aa0b02bc184f774de8/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:30:17-78
+89                android:value="androidx.startup" />
+89-->[androidx.lifecycle:lifecycle-process:2.8.7] /home/resetadmin/.gradle/caches/8.10.2/transforms/4763ec80fee7f9aa0b02bc184f774de8/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:31:17-49
+90            <meta-data
+90-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/resetadmin/.gradle/caches/8.10.2/transforms/501ee1254b43a6b56e0507fb408b899e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+91                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+91-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/resetadmin/.gradle/caches/8.10.2/transforms/501ee1254b43a6b56e0507fb408b899e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+92                android:value="androidx.startup" />
+92-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/resetadmin/.gradle/caches/8.10.2/transforms/501ee1254b43a6b56e0507fb408b899e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+93        </provider>
+94
+95        <activity
+95-->[androidx.compose.ui:ui-test-manifest:1.7.5] /home/resetadmin/.gradle/caches/8.10.2/transforms/59e14fc4bea572db3d976e4ea65bf4fd/transformed/ui-test-manifest-1.7.5/AndroidManifest.xml:23:9-25:39
+96            android:name="androidx.activity.ComponentActivity"
+96-->[androidx.compose.ui:ui-test-manifest:1.7.5] /home/resetadmin/.gradle/caches/8.10.2/transforms/59e14fc4bea572db3d976e4ea65bf4fd/transformed/ui-test-manifest-1.7.5/AndroidManifest.xml:24:13-63
+97            android:exported="true" />
+97-->[androidx.compose.ui:ui-test-manifest:1.7.5] /home/resetadmin/.gradle/caches/8.10.2/transforms/59e14fc4bea572db3d976e4ea65bf4fd/transformed/ui-test-manifest-1.7.5/AndroidManifest.xml:25:13-36
+98        <activity
+98-->[androidx.compose.ui:ui-tooling-android:1.7.5] /home/resetadmin/.gradle/caches/8.10.2/transforms/d5ccf7f9a3c818a87fdda290fd7e2160/transformed/ui-tooling-release/AndroidManifest.xml:23:9-25:39
+99            android:name="androidx.compose.ui.tooling.PreviewActivity"
+99-->[androidx.compose.ui:ui-tooling-android:1.7.5] /home/resetadmin/.gradle/caches/8.10.2/transforms/d5ccf7f9a3c818a87fdda290fd7e2160/transformed/ui-tooling-release/AndroidManifest.xml:24:13-71
+100            android:exported="true" />
+100-->[androidx.compose.ui:ui-tooling-android:1.7.5] /home/resetadmin/.gradle/caches/8.10.2/transforms/d5ccf7f9a3c818a87fdda290fd7e2160/transformed/ui-tooling-release/AndroidManifest.xml:25:13-36
+101
+102        <service
+102-->[androidx.room:room-runtime:2.6.1] /home/resetadmin/.gradle/caches/8.10.2/transforms/9a2b57ad4a21d0f9b9ec7d2fbe98b943/transformed/room-runtime-2.6.1/AndroidManifest.xml:24:9-28:63
+103            android:name="androidx.room.MultiInstanceInvalidationService"
+103-->[androidx.room:room-runtime:2.6.1] /home/resetadmin/.gradle/caches/8.10.2/transforms/9a2b57ad4a21d0f9b9ec7d2fbe98b943/transformed/room-runtime-2.6.1/AndroidManifest.xml:25:13-74
+104            android:directBootAware="true"
+104-->[androidx.room:room-runtime:2.6.1] /home/resetadmin/.gradle/caches/8.10.2/transforms/9a2b57ad4a21d0f9b9ec7d2fbe98b943/transformed/room-runtime-2.6.1/AndroidManifest.xml:26:13-43
+105            android:exported="false" />
+105-->[androidx.room:room-runtime:2.6.1] /home/resetadmin/.gradle/caches/8.10.2/transforms/9a2b57ad4a21d0f9b9ec7d2fbe98b943/transformed/room-runtime-2.6.1/AndroidManifest.xml:27:13-37
+106
+107        <receiver
+107-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/resetadmin/.gradle/caches/8.10.2/transforms/501ee1254b43a6b56e0507fb408b899e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+108            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+108-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/resetadmin/.gradle/caches/8.10.2/transforms/501ee1254b43a6b56e0507fb408b899e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+109            android:directBootAware="false"
+109-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/resetadmin/.gradle/caches/8.10.2/transforms/501ee1254b43a6b56e0507fb408b899e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+110            android:enabled="true"
+110-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/resetadmin/.gradle/caches/8.10.2/transforms/501ee1254b43a6b56e0507fb408b899e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+111            android:exported="true"
+111-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/resetadmin/.gradle/caches/8.10.2/transforms/501ee1254b43a6b56e0507fb408b899e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+112            android:permission="android.permission.DUMP" >
+112-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/resetadmin/.gradle/caches/8.10.2/transforms/501ee1254b43a6b56e0507fb408b899e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+113            <intent-filter>
+113-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/resetadmin/.gradle/caches/8.10.2/transforms/501ee1254b43a6b56e0507fb408b899e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+114                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+114-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/resetadmin/.gradle/caches/8.10.2/transforms/501ee1254b43a6b56e0507fb408b899e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+114-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/resetadmin/.gradle/caches/8.10.2/transforms/501ee1254b43a6b56e0507fb408b899e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+115            </intent-filter>
+116            <intent-filter>
+116-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/resetadmin/.gradle/caches/8.10.2/transforms/501ee1254b43a6b56e0507fb408b899e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+117                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+117-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/resetadmin/.gradle/caches/8.10.2/transforms/501ee1254b43a6b56e0507fb408b899e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+117-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/resetadmin/.gradle/caches/8.10.2/transforms/501ee1254b43a6b56e0507fb408b899e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+118            </intent-filter>
+119            <intent-filter>
+119-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/resetadmin/.gradle/caches/8.10.2/transforms/501ee1254b43a6b56e0507fb408b899e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+120                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+120-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/resetadmin/.gradle/caches/8.10.2/transforms/501ee1254b43a6b56e0507fb408b899e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+120-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/resetadmin/.gradle/caches/8.10.2/transforms/501ee1254b43a6b56e0507fb408b899e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+121            </intent-filter>
+122            <intent-filter>
+122-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/resetadmin/.gradle/caches/8.10.2/transforms/501ee1254b43a6b56e0507fb408b899e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+123                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+123-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/resetadmin/.gradle/caches/8.10.2/transforms/501ee1254b43a6b56e0507fb408b899e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+123-->[androidx.profileinstaller:profileinstaller:1.3.1] /home/resetadmin/.gradle/caches/8.10.2/transforms/501ee1254b43a6b56e0507fb408b899e/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+124            </intent-filter>
+125        </receiver>
+126    </application>
+127
+128</manifest>
