@@ -1,0 +1,64 @@
+name: 🐛 Bug Report
+description: Report a reproducible bug or unexpected behavior in GhostPin.
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a bug! Please ensure you have searched existing issues before submitting.
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of what the bug is.
+      placeholder: Describe the problem...
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Step-by-step instructions to reproduce the issue.
+      placeholder: |
+        1. Open GhostPin
+        2. Set mock location to ...
+        3. Tap Start Mocking
+        4. See error ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What actually happened?
+    validations:
+      required: true
+  - type: dropdown
+    id: device-type
+    attributes:
+      label: Device Type
+      options:
+        - Physical Device
+        - Android Emulator
+    validations:
+      required: true
+  - type: input
+    id: device-info
+    attributes:
+      label: Device Model & Android Version
+      placeholder: e.g. Pixel 8 Pro (Android 15 / API 35) or Samsung Galaxy S23 (Android 14)
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant Logcat / Stacktrace
+      description: Paste any error messages or logcat output here.
+      render: shell

@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Ask Questions & Discuss Ideas
+    url: https://github.com/anumulamadhava2005/Ghost-pin/discussions
+    about: Ask questions, share ideas, and connect with the community.
+  - name: 📖 Contributing Guide
+    url: https://github.com/anumulamadhava2005/Ghost-pin/blob/master/CONTRIBUTING.md
+    about: Read our contributing guide to get started.

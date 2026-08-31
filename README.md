@@ -1,56 +1,154 @@
-# Welcome to your Expo app 👋
+# GhostPin 📍👻
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+<p align="center">
+  <img src="app/src/main/res/drawable/ic_ghost_logo.xml" width="96" height="96" alt="GhostPin Logo" />
+</p>
 
-## Get started
+<p align="center">
+  <b>A lightweight, privacy-focused, and developer-friendly Android GPS simulation & mock location toolkit.</b>
+</p>
 
-1. Install dependencies
+<p align="center">
+  <a href="https://github.com/anumulamadhava2005/Ghost-pin/actions/workflows/android-ci.yml"><img src="https://github.com/anumulamadhava2005/Ghost-pin/actions/workflows/android-ci.yml/badge.svg" alt="CI Status" /></a>
+  <a href="https://kotlinlang.org"><img src="https://img.shields.io/badge/Kotlin-2.0.21-purple.svg" alt="Kotlin" /></a>
+  <a href="https://developer.android.com/jetpack/compose"><img src="https://img.shields.io/badge/Jetpack%20Compose-2024.10.00-blue.svg" alt="Compose" /></a>
+  <a href="https://developer.android.com/about/versions/15"><img src="https://img.shields.io/badge/Target%20SDK-35-green.svg" alt="Target SDK" /></a>
+  <a href="https://developer.android.com/about/dashboards"><img src="https://img.shields.io/badge/Min%20SDK-26-orange.svg" alt="Min SDK" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-brightgreen.svg" alt="License" /></a>
+  <a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg" alt="PRs Welcome" /></a>
+</p>
 
-   ```bash
-   npm install
-   ```
+---
 
-2. Start the app
+## 🌟 Overview
 
-   ```bash
-   npx expo start
-   ```
+**GhostPin** allows Android developers, QA engineers, and tech enthusiasts to simulate custom GPS locations and complex journeys without physical travel. Built entirely with **Jetpack Compose** and **OpenStreetMap (osmdroid)**, GhostPin delivers a fluid, modern, and open-source location spoofing experience without vendor lock-in or proprietary API keys.
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## ✨ Features
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- 📍 **Instant Location Mocking**: Teleport your device's GPS to any coordinate worldwide with a single tap.
+- 🗺️ **Interactive OpenStreetMap**: Smooth, native map rendering with address search, geocoding, and interactive pin placement.
+- 🚗 **Multi-Stop Journeys & Routes**:
+  - Create customized routes with multiple waypoints.
+  - Set custom stay durations per stop.
+  - Configure realistic travel speeds (walking, cycling, driving).
+  - Real-time progress interpolation between waypoints.
+- 💾 **Favorites & Saved Presets**: Save frequently used spots and routes locally using an encrypted Room database.
+- ⚙️ **Fine-Grained Simulation Settings**:
+  - Configurable update intervals (500ms – 10s).
+  - Accuracy jitter & altitude simulation.
+  - Auto-stop timers / expiry durations.
+- 🛡️ **Foreground Service Engine**: Uninterrupted background simulation with notification controls and wake lock management.
+- 🎨 **Modern Material 3 UI**: Dynamic theme colors, dark mode support, and clean animations.
 
-## Get a fresh project
+---
 
-When you're ready, run:
+## 📱 Screenshots & Architecture
 
-```bash
-npm run reset-project
+```
+com.ghostpin.app
+├── data/               # Room database, Entities, DAOs & Repositories
+│   ├── local/          # AppDatabase, LocationDao, JourneyDao
+│   └── repository/     # Repository implementations & DataStore preferences
+├── domain/             # Business models & repository interfaces
+│   ├── model/          # MockLocation, Journey, SimulationConfig, MockState
+│   └── repository/     # JourneyRepository, LocationRepository, SettingsRepository
+├── engine/             # Android Mock Location Provider & Foreground Service
+│   ├── MockLocationController.kt
+│   └── MockLocationService.kt
+└── ui/                 # Jetpack Compose UI (MVVM)
+    ├── home/           # Main dashboard & active simulation status
+    ├── map/            # Interactive OSM map picker & search
+    ├── journey/        # Route creator & journey playback
+    ├── saved/          # Saved locations & presets
+    ├── settings/       # App preferences & mock provider setup
+    ├── navigation/     # Jetpack Navigation Compose graph
+    └── theme/          # Material 3 color schemes & typography
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-### Other setup steps
+## 🚀 Getting Started
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+### Prerequisites
 
-## Learn more
+- **Android Studio**: Android Studio Ladybug (2024.2.1+) or Koala / Meerkat recommended.
+- **JDK**: Java Development Kit 17 (Eclipse Temurin or OpenJDK 17).
+- **Android SDK**: Android 15 (API 35) SDK installed via SDK Manager.
+- **Physical Device or Emulator**: Android 8.0 (API level 26) or higher.
 
-To learn more about developing your project with Expo, look at the following resources:
+### Installation & Build
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/anumulamadhava2005/Ghost-pin.git
+   cd Ghost-pin
+   ```
 
-## Join the community
+2. **Open in Android Studio**:
+   - Open Android Studio -> *File* -> *Open...* -> Select the cloned `Ghost-pin` folder.
+   - Allow Gradle to sync dependencies.
 
-Join our community of developers creating universal apps.
+3. **Build via CLI**:
+   ```bash
+   # Build debug APK
+   ./gradlew assembleDebug
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+   # Run unit tests
+   ./gradlew test
+
+   # Run Android lint
+   ./gradlew lint
+   ```
+
+4. **Run on Device / Emulator**:
+   ```bash
+   ./gradlew installDebug
+   ```
+
+---
+
+## 🔧 Enabling Mock Locations on Android
+
+To use GhostPin on your Android device:
+
+1. Open **Settings** > **About Phone**.
+2. Tap **Build Number** 7 times to enable **Developer Options**.
+3. Go back to **Settings** > **System** > **Developer Options**.
+4. Scroll down to **Select mock location app** (under the *Debugging* category).
+5. Choose **GhostPin**.
+6. Grant Location & Notification permissions when launching GhostPin.
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions from everyone! Whether you are fixing a bug, adding map providers, polishing the UI, or writing tests, your help is appreciated.
+
+Please read our [Contributing Guide](CONTRIBUTING.md) to get started with our workflow, coding standards, and branch guidelines.
+
+### Good First Issues
+- Adding GPX route file import/export.
+- Floating joystick overlay for real-time manual movement.
+- Additional map tile provider presets (satellite, terrain, dark mode tiles).
+- Automated UI tests with Compose Test Rule.
+
+---
+
+## 📜 Code of Conduct
+
+This project adheres to the [Contributor Covenant Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code.
+
+---
+
+## 🔒 Security
+
+For security vulnerabilities and responsible disclosure guidelines, please refer to our [Security Policy](SECURITY.md).
+
+---
+
+## 📄 License
+
+GhostPin is open-source software licensed under the [MIT License](LICENSE).

@@ -1,0 +1,42 @@
+name: 💡 Feature Request
+description: Suggest a new feature, improvement, or idea for GhostPin.
+labels: ["enhancement", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for suggesting a feature! We are always looking for ways to improve GhostPin.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Feature Summary
+      description: What is the proposed feature or improvement?
+      placeholder: A clear summary of the feature...
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or Use Case
+      description: What problem does this feature solve? Is your feature request related to a specific workflow or problem?
+      placeholder: I am always frustrated when...
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe how you envision this working.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Any alternative solutions or features you've considered?
+  - type: checkboxes
+    id: willingness
+    attributes:
+      label: Contribution
+      options:
+        - label: I would be willing to submit a PR to implement this feature!

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="action_stop">Stop Fake Location</string>
-    <string name="app_name">GhostPin</string>
-    <string name="notification_channel_description">Active mock location simulation notifications</string>
-    <string name="notification_channel_name">GhostPin Simulation</string>
-</resources>
